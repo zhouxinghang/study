@@ -14,6 +14,7 @@ import javax.servlet.annotation.WebServlet;
         //@WebInitParam(name="allow", value="127.0.0.1"),//ip白名单，为空或不配置允许所有
         //@WebInitParam(name="deny", value = "127.0.0.2"),//ip黑名单，优先级高于白名单
         @WebInitParam(name="loginUsername", value="admin"),
+        @WebInitParam(name="loginPassword",value="123456"),
         @WebInitParam(name="resetEnable", value="false")//// 禁用HTML页面上的“Reset All”功能
     })
 public class DruidStatViewServlet extends StatViewServlet{
