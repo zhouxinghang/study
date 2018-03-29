@@ -73,8 +73,8 @@ public class DruidDBConfig {
     @Value("${spring.datasource.filters}")
     private String filters;
 
-    @Value("${spring.datasource.type}")
-    private String dbType;
+//    @Value("${spring.datasource.type}")
+//    private String dbType;
 
     @Value("{spring.datasource.connectionProperties}")
     private Properties connectionProperties;
