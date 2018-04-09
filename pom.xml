@@ -43,19 +43,26 @@
 			<artifactId>druid</artifactId>
 			<version>1.0.20</version>
 		</dependency>
-
 		<dependency>
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
 			<version>23.0</version>
 		</dependency>
-
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.38</version>
 		</dependency>
-
+		<dependency>
+			<groupId>org.apache.thrift</groupId>
+			<artifactId>libthrift</artifactId>
+			<version>0.11.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.5.8</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -71,6 +78,15 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.thrift.tools</groupId>
+				<artifactId>maven-thrift-plugin</artifactId>
+				<version>0.1.11</version>
+				<configuration>
+					<!--<thriftExecutable>/usr/local/thrift-0.8.0</thriftExecutable>-->
+					<thriftSourceRoot>${basedir}/src/main/resources/thrift</thriftSourceRoot>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
