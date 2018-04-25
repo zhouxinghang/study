@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 18080
 
 spring:
   datasource:
@@ -41,3 +41,6 @@ spring:
       hibernate:
         hbm2ddl:
           auto: create
+
+test:
+  name: zhouxinghang

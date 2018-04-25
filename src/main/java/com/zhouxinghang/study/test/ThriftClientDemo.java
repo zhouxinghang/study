@@ -38,7 +38,6 @@ public class ThriftClientDemo {
                 transport.close();
             }
         }
-
     }
 
     public static void main(String[] args) {

@@ -1,10 +1,14 @@
 package com.zhouxinghang.study.cron;
 
+import com.zhouxinghang.study.test.Main3;
+
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
+
+import javax.annotation.Resource;
 
 /**
  * Created by zhouxinghang on 2018/3/29.
@@ -13,7 +17,8 @@ import java.util.Date;
 
 @Component
 public class ScheduledDemo {
-
+    @Resource
+    private Main3 main3;
     /**
      * 时间间隔是两次任务开始的时间间隔（如果上次任务执行的时间超过了时间间隔，那本次任务也会等到上次任务执行结束再开始执行，
      * 除非这个Job用@Async注解了）
@@ -39,6 +44,7 @@ public class ScheduledDemo {
     public void task2() {
         System.out.println("task2 is begin at " + new Date().toString());
         try {
+
             Thread.sleep(30000);
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -56,5 +62,10 @@ public class ScheduledDemo {
             e.printStackTrace();
         }
         System.out.println("task3 is end at " + new Date().toString());
+    }
+
+    @Scheduled(fixedDelay = 5000)
+    public void test() {
+        System.out.println("name: " + main3.getName());
     }
 }
