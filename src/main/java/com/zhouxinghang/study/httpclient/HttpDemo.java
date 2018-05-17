@@ -1,6 +1,5 @@
 package com.zhouxinghang.study.httpclient;
 
-import com.ebuy.pojo.TbItem;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.NameValuePair;

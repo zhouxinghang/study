@@ -111,12 +111,13 @@ public class HttpConfigDemo {
     }
 
     private HttpUriRequest getRequest() {
-        HttpUriRequest request = RequestBuilder.get("http://localhost:18080/redirect")
+        HttpUriRequest request = RequestBuilder.get("http://172.30.44.61:8080")
             .setConfig(getRequestConfig())
             .setHeader("Connection", "keep-alive")
             .setEntity(getEntity())
             .build();
         return request;
+
 
 
     }
