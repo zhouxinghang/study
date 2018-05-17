@@ -1,6 +1,7 @@
 package com.zhouxinghang.study.test;
 
-import com.zhouxinghang.study.thrift.tservice.HelloWorldService;
+
+import com.zhouxinghang.thrift.service.HelloWorldService;
 
 import org.apache.thrift.TException;
 import org.apache.thrift.protocol.TBinaryProtocol;

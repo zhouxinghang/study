@@ -1,7 +1,7 @@
 package com.zhouxinghang.study.test;
 
-import com.zhouxinghang.study.thrift.tservice.HelloWorldService;
 import com.zhouxinghang.study.tservice.HelloWorldServiceImpl;
+import com.zhouxinghang.thrift.service.HelloWorldService;
 
 import org.apache.thrift.TProcessor;
 import org.apache.thrift.protocol.TBinaryProtocol;

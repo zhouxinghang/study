@@ -1,5 +1,7 @@
 package com.zhouxinghang.study.cron;
 
+import com.google.common.collect.Lists;
+
 import com.zhouxinghang.study.test.Main3;
 
 import org.springframework.scheduling.annotation.Async;
@@ -7,6 +9,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
+import java.util.List;
 
 import javax.annotation.Resource;
 
@@ -44,7 +47,10 @@ public class ScheduledDemo {
     public void task2() {
         System.out.println("task2 is begin at " + new Date().toString());
         try {
-
+            List<String> list = Lists.newArrayList();
+            for(int i = 0; i < 1000; i++) {
+                list.add(String.valueOf("String"+i).intern());
+            }
             Thread.sleep(30000);
         } catch (InterruptedException e) {
             e.printStackTrace();

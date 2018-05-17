@@ -20,6 +20,13 @@ public class Main1 {
         } else {
             System.out.println("其他字符");
         }
+
+        // TODO Auto-generated method stub
+        boolean isOk = false;
+
+        assert isOk = true;//如果开启则会调用assert，那么isOk就为true
+
+        System.out.println(isOk);//返回结果：false。一般结果都是返回false,表示assert未开启
     }
 
 

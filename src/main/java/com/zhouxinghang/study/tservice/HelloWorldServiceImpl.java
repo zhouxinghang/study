@@ -1,8 +1,9 @@
 package com.zhouxinghang.study.tservice;
 
 
-import com.zhouxinghang.study.thrift.tmodel.User;
-import com.zhouxinghang.study.thrift.tservice.HelloWorldService;
+
+import com.zhouxinghang.thrift.model.User;
+import com.zhouxinghang.thrift.service.HelloWorldService;
 
 import org.apache.thrift.TException;
 
