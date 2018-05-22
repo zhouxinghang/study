@@ -3,7 +3,6 @@ package com.zhouxinghang.study.configuration;
 import com.alibaba.druid.support.spring.stat.BeanTypeAutoProxyCreator;
 import com.alibaba.druid.support.spring.stat.DruidStatInterceptor;
 import com.zhouxinghang.study.service.BootService;
-import org.hibernate.validator.internal.xml.binding.BeanType;
 import org.springframework.aop.framework.ProxyFactoryBean;
 import org.springframework.aop.support.DefaultPointcutAdvisor;
 import org.springframework.aop.support.JdkRegexpMethodPointcut;

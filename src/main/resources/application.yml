@@ -1,6 +1,5 @@
 server:
   port: 8080
-
 spring:
   datasource:
     name: basic-db
@@ -41,6 +40,25 @@ spring:
       hibernate:
         hbm2ddl:
           auto: create
+
+  #kafka相关配置
+  kafka:
+    bootstrap-servers: localhost:9092
+    #key-value序列化反序列化
+    consumer:
+      group-id: 0
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      batch-size: 65536
+      buffer-memory: 524288
+  # No Spring Session store is configured
+  session:
+    store-type: none
+
+
 
 test:
   name: zhouxinghang
