@@ -20,5 +20,7 @@ public class GuavaCacheTest extends StudyApplicationTests {
         guavaCache.put("name", "java");
         System.out.println(guavaCache.get("name"));
         System.out.println(guavaCache.get("age"));
+        guavaCache.refresh("name");
+        guavaCache.refresh("age");
     }
 }
