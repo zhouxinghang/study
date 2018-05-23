@@ -23,4 +23,5 @@ public class KafkaSender {
         kafkaTemplate.send(channel, message);
     }
 
+
 }

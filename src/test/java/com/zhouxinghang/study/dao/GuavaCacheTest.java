@@ -17,6 +17,7 @@ public class GuavaCacheTest extends StudyApplicationTests {
     @Test
     public void test() {
         guavaCache.put("name", "周星航");
+        guavaCache.put("name", "java");
         System.out.println(guavaCache.get("name"));
         System.out.println(guavaCache.get("age"));
     }
